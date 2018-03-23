@@ -13,15 +13,16 @@
             <source src="{{ vid }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-
+        {% if not done %}
         <form method="post" action="/submitted">
             <p class="question" > {{ msg }}</p>
             <button type="submit" name="action" value="0">{{ b0 }}</button>
             <button type="submit" name="action" value="1">{{ b1 }}</button>
         </form>
-
+        {% else %}
+        <p> <strong> {{ msg }} </strong></p>
+        {% endif %}
     </div>
-
 </div>
 
 {% endblock %}

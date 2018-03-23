@@ -35,6 +35,7 @@ def set_cookie():
         session['idx'] = 0
         session['vid'] = get_media_path(items[0])
         session['msg'] = question_prog(0)
+        session['done'] = False
         return
     if session['idx'] == n_items:
         logger.debug('Idx: {} equals items: {}.'.format(
@@ -44,6 +45,7 @@ def set_cookie():
         session.pop('idx', None)
         session['msg'] = 'Testing is complete. Thank you!!'
         session['vid'] = 'static/media/thank.mp4'
+        session['done'] = True
         return
     logger.debug('Index: {}'.format(session['idx']))
     session['vid'] = get_media_path(session['idx'])
@@ -83,6 +85,7 @@ def index():
                            title='Home',
                            b0=buttons[0],
                            b1=buttons[1],
+                           done=session['done'],
                            vid=session['vid'],
                            msg=session['msg'])
 
