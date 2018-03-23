@@ -1,0 +1,18 @@
+{
+    "question":"Is this a recorded (real) or synthetic (fake) animation?",
+    "buttons":["Real", "Fake"],
+    "media_directory":"static/test1/",
+    "media_files": ["pb_scene_a_01_0184_jm_split_a_08_97.mp4",
+                    "pb_scene_a_02_0120_jm_split_a_08_97.mp4",
+                    "pb_scene_a_03_0203_jm_split_a_08_97.mp4",
+                    "pb_scene_a_04_0056_jm_split_a_08_97.mp4",
+                    "pb_scene_a_05_0263_jm_split_a_08_97.mp4",
+                    "pb_scene_a_06_0089_jm_split_a_08_97.mp4",
+                    "pb_scene_a_01_0184.mp4",
+                    "pb_scene_a_02_0120.mp4",
+                    "pb_scene_a_03_0203.mp4",
+                    "pb_scene_a_04_0056.mp4",
+                    "pb_scene_a_05_0263.mp4",
+                    "pb_scene_a_06_0089.mp4" ]
+}
+

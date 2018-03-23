@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block nav_home %}active{% endblock %}
+{% block content %}
+
+<div class="container">
+    <div class="well">
+
+        <p class="lead">Please watch this movie
+            <strong>with your sound on</strong>
+                and answer the question below.</p>
+
+        <video width="750" height="600" controls>
+            <source src="{{ vid }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <form method="post" action="/submitted">
+            <p class="question" > {{ msg }}</p>
+            <button type="submit" name="action" value="0">{{ b0 }}</button>
+            <button type="submit" name="action" value="1">{{ b1 }}</button>
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock %}

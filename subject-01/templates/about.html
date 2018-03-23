@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block nav_about %}active{% endblock %}
+{% block content %}
+
+<div class="container"">
+    <h1>{{ title }}</h1>
+    <p>We are experimenting with different animation techniques
+    and would like your feedback.</p>
+
+    <p>Please watch each video
+        <strong>with your sound on</strong>
+        and give your answer to the question below.</p>
+    <p>For each video watched, we record your answer. <br/>
+        No other data is recorded, and the recording is completely anonymous.
+    </p>
+    <p class="tech_info">
+    You need to use a web browser that supports HTML5 video. <br/>
+    All modern browsers are compliant. Javascript is not required. We store a small cookie to keep track of progress, which expires immediately when you finish the set of videos or close the browser.</p>
+</div>
+
+{% endblock %}

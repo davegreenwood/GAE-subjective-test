@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    font: 1.0em arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+
+video::-webkit-media-controls-fullscreen-button {
+    display: none;
+}
+
+
+form {
+    display: block;
+    font: 1.2em arial, sans-serif;
+}
+
+
+form button {
+    background-color: white;
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font: 1em arial, sans-serif;
+}
+
+form button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container {
+    text-align:center;
+}
+
+.well {
+    border: 2px solid #999;
+    border-radius: 12px;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+}
+
+.tech_info {
+    display: inline-block;
+    text-align:center;
+    max-width: 400px;
+    font: 0.8em arial, sans-serif;
+}

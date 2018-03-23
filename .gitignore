@@ -1,0 +1,20 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitattributes
+!.gitignore
+!README.md
+!*.py
+!*.yaml
+!*.json
+!*.html
+!*.css
+!*.xml
+!*.txt
+
+
+# ...even if they are in subdirectories
+!*/
+
+lib

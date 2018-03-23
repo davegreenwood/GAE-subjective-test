@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Subjective Tests - {{ title }}</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="{% block nav_home %}{% endblock %}">
+                <a href="/">Home</a></li>
+            <li class="{% block nav_about %}{% endblock %}">
+                <a href="/about">About</a></li>
+            <li class="{% block nav_contact %}{% endblock %}">
+                <a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+        {% block content %}{% endblock %}
+    </body>
+</html>
